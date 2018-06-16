@@ -14,9 +14,9 @@ class Arguments(parser: ArgParser) {
 
     val answersPath by parser.storing("-a", "--answers", help = "locations of the file containing the answers").default("answers.txt")
 
-    val questionsOutput by parser.storing("-w", "--questions-output", help = "generated output of questions (white cards)").default("questionsGenerated.pdf")
+    val questionsOutput by parser.storing("-b", "--questions-output", help = "generated output of questions (black cards)").default("questionsGenerated.pdf")
 
-    val answersOutput by parser.storing("-b", "--answers-output", help = "generated output of answers (black cards)").default("answersGenerated.pdf")
+    val answersOutput by parser.storing("-w", "--answers-output", help = "generated output of answers (white cards)").default("answersGenerated.pdf")
 }
 
 object Main {
