@@ -14,11 +14,11 @@ Cards Against Humanity cards generator written in Kotlin.
 `java -jar CahGenerator.jar {arguments}`
 
 ### Arguments:
-+ `-c`, `--config` - Config file location
-+ `-q`, `--questions` - Questions file
-+ `-a`, `--answers` - Answers file
-+ `-w`, `--answers-output` - Generated answers pdf (White cards)
-+ `-w`, `--questions-output` - Generated questions pdf (Black cards)
++ `-c`, `--config` - Config file location, if not present defaults will be used, defualt: cah.conf
++ `-q`, `--questions` - Questions file, if not present question generation will be skipped, default: questions.txt
++ `-a`, `--answers` - Answers file, if not present answer generation will be skipped, default: answers.txt
++ `-b`, `--questions-output` - Generated questions pdf (Black cards), default: questionsGenerated.pdf
++ `-w`, `--answers-output` - Generated answers pdf (White cards), default: answersGenerated.pdf
 
 ### Config file possible properties:
 + `pick_format` - 'PICK' string format ,%s is replaced by number (`pick_format = PICK %s` => PICK 2), default: PICK %s
